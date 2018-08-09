@@ -1,0 +1,12 @@
+<h1>Welcome to the Gallery</h1>
+
+<% @photos.each do |photo| %>
+  <div class="image-div">
+    <h3><a href="/photos/<%= photo.id %>"><%= photo.title %></a></h3>
+    <a href="/photos/<%= photo.id %>"><img src="<%= photo.image %>" class="small-img"></a>
+  </div>
+<% end %>
+
+<div>
+  <a href="/photos/new"><h4>Add a New Photo</h4></a>
+</div>

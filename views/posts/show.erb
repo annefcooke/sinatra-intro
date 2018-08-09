@@ -1,0 +1,8 @@
+<h1><%=  @post.body %></h1>
+
+<a href="/posts/<%= @post.id%>/edit"><h4>Edit</h4></a>
+
+<form class="" action="/posts/<%= @post.id%>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" class="btn btn-secondary" value="Delete">
+</form>

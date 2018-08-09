@@ -1,0 +1,9 @@
+<h1>Welcome to the Careers Homepage</h1>
+
+<% @careers.each do |vacancy| %>
+  <div>
+    <h3><a href="/careers/<%= vacancy[:id] %>"><%= vacancy[:title] %></a></h3>
+  </div>
+<% end %>
+
+<a href="/careers/new">Add a New Vacancy</a>

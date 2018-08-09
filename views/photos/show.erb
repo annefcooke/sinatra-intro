@@ -1,0 +1,9 @@
+<h1><%=  @photo.body %></h1>
+<img src="<%= @photo.image %>" class="main-img">
+
+<a href="/photos/<%= @photo.id%>/edit"><h4>Edit</h4></a>
+
+<form class="" action="/photos/<%= @photo.id%>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" class="btn btn-secondary" value="Delete">
+</form>
